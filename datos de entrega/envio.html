@@ -26,6 +26,10 @@
 
         <input type="text" id="direccion" name="direccion"><br><hr>
 
+        <label for="direccion">Id de producto:</label><br>
+
+        <input type="text" id="producto" name="producto"><br><hr>
+
 
 
        <br> <label for="pais">País:</label><br>
@@ -36,7 +40,7 @@
 
         <input type="radio" id="col" name="pais" value="Colombia">
 
-        <label for="col">Comedia</label><br>
+
 
        
 
@@ -92,6 +96,8 @@
             event.preventDefault();
 
             var direccion = document.getElementById("direccion").value;
+            var producto = document.getElementById("producto").value;
+
 
             var pais = document.querySelector('input[name="pais"]:checked').value;
 
@@ -107,7 +113,7 @@
 
 
 
-            alert("Datos de entrega y pago:\nDirección: " + direccion + "\nPaís: " + pais + "\nMétodo de pago: " + typeen.join(", ") + "\nTipo de entrega: " + mepag);
+            alert("Datos de entrega y pago:\nDirección: " + direccion + "\nProducto: " + producto +"\nPaís: " + pais + "\nMétodo de pago: " + typeen.join(", ") + "\nTipo de entrega: " + mepag);
 
         });
 
